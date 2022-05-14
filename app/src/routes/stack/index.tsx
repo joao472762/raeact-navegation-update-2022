@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Home } from "../../screens/Home";
+import { Register } from "../../screens/Register";
 import { SignIn } from "../../screens/SignIn";
 import { stackNavigationScreensProps } from "../models/stack";
 
@@ -10,7 +11,7 @@ const {
     Screen
 } = createNativeStackNavigator<stackNavigationScreensProps>()
 
-export function StackScreens(){
+export function StackRoutes(){
 
     return(
         <Navigator 
@@ -26,6 +27,10 @@ export function StackScreens(){
             <Screen
             name="Home"
             component={Home}
+            />
+            <Screen
+            name="Register"
+            component= {Register}
             />
         </Navigator>
     )

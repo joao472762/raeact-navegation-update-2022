@@ -13,12 +13,12 @@ export function Home(){
         <View style={style.container}>
             <Text>
                 
-                your arrive in Home Page
+                your arrived in Home Page
             </Text>
             <Button 
-            title="Voltar"
+            title="Cadastra-se"
             activeOpacity={.7}
-            onPress={()=> navigation.goBack()}
+            onPress={()=> navigation.navigate('Register')}
             />
         </View>
     );

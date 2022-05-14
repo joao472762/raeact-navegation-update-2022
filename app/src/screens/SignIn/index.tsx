@@ -18,7 +18,7 @@ export function SignIn() {
   return (
     <View style={styles.container}>
         <Text>
-            you arrive the SignIn page
+            you arrived the SignIn page
         </Text>
         <Button
         title="ir para Home"
